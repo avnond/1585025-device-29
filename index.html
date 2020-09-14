@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Онлайн-магазин «Девайс»</title>
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<body>
+    <header>
+      <h3>Онлайн-магазин «Девайс»</h3>
+        <nav>
+            <a href="#">
+                <img src="/img/logo-header.svg" width="163" height="35" alt="Логотип магазина Девайс">
+            </a>
+            <ul>
+               <!--Куда вложить "поиск по сайту"? Это ведь форма?-->
+              <li><a href="blank.html">Войти</a></li>
+              <li><a href="blank.html">Сравнить</a></li>
+              <li><a href="blank.html">Корзина</a></li>
+            </ul>
+            
+            <ul>
+               <li><a href="catalog.html">Каталог товаров</a></li>
+               <li><a href="blank.html">Доставка</a></li>
+               <li><a href="blank.html">Гарантия</a></li>
+               <li><a href="blank.html">Контакты</a></li>
+             </ul>
 
-  </body>
+       </nav>
+    </header>
+
+   <main> 
+       <section>
+       <h3>Карточка товара(слайд 1)</h3>
+       <img src="/img/slider-1-1.svg" width="384" height="486" alt="Изображение селфи-палки">
+       <p>Делай селфи, как Бен Стиллер!</p>
+       <p>Самая длинная палка для селфи доступна в нашем магазине.<br> 
+        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+      <a href="catalog.html">Подробнее</a>
+      <!--Возникли сомнения: написать характеристики товара как таблицу или как список. Интуитивно склоняюсь к таблице-->
+      <table>
+        <tr>
+          <td>8,5 м</td>
+          <td>5 кг</td>
+          <td>Карбон</td>
+        </tr>
+        <tr>
+            <td>Длина палки</td>
+            <td>Вес палки</td>
+            <td>Материал</td>
+          </tr>
+      </table>
+      </section>
+
+      <section>
+      <h3>Разделы каталога товаров</h3>
+      <ul>
+        <li><a href="catalog.html">
+           <img src="">Виртуальная реальность</a></li>
+        <li><a href="catalog.html">
+            <img src="">Моноподы для селфи</a></li>
+         <li><a href="catalog.html">
+            <img src="">Экшн-камеры</a></li>
+         <li><a href="catalog.html">
+            <img src="">Фитнес-браслеты</a></li>
+         <li><a href="catalog.html">
+            <img src="">Умные часы</a></li>
+         <li><a href="catalog.html">
+            <img src="">Квадрокоптеры</a></li>
+      </ul>
+     </section>
+
+    <section>
+    <h3>Слайдер:Доставка</h3>
+    <ul>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="blank.html">Гарантия</a></li>
+        <li><a href="blank.html">Кредит</a></li>
+      <!--Это оформить как ссылки или как кнопки?-->      
+    </ul>
+    <h2>Доставка</h2>
+      <p>Мы с удовольствием доставим ваш товар прямо к вашему<br> 
+          подъезду совершенно бесплатно! Ведь мы неплохо <br>
+          заработаем, поднимая его на ваш этаж.</p>
+      </section>
+
+      <section>
+    <img src="#" alt="GJI">
+    <img src="#" alt="SP.Gadgets">
+    <img src="#" alt="GoPro">
+    <img src="#" alt="VIVE">
+      </section>
+
+      <section>
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> 
+          который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки<br>
+          России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДор Экспедиция</li>
+        </ul> 
+        <a href="blank.html">Подробнее о нас</a>
+      </section>
+
+       <section>
+         <h2>Контакты</h2>
+         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
+          проверить работоспособность покупки. Всякое бывает.</p>
+      <img src="#" alt="Местоположение нашего офиса" width="560" height="222">
+      <p><a href="blank.html">Напишите нам</a></p>
+      </section>
+
+  </main>
+<footer>
+<section>
+ <a href="#" alt="Онлайн-магазин Девайс">
+  <img src="/img/logo-header.svg" width="163" height="35" alt="Логотип магазина Девайс">
+  </a>
+  <p>г.Москва, ул.Строителей, 15</p>
+</section>
+
+<section>
+  <ul>
+    <li><a href="blank.html">Доставка</a></li>
+    <li><a href="blank.html">Гарантия</a></li>
+    <li><a href="blank.html">Кредит</a></li>      
+</ul> 
+<ul>
+  <li><a href="blank.html">
+    <img src="#" alt="Наша страница на Facebook">
+  </a></li> 
+  <li><a href="blank.html">
+    <img src="#" alt="Наша Instagram страница">
+  </a></li> 
+  <li><a href="blank.html">
+    <img src="#" alt="Наша страница на Twitter">
+  </a></li>   
+</ul>
+</section>
+
+<section>
+  <ul>
+    <li><a href="blank.html">Войти</a></li>
+    <li><a href="blank.html">Сравнить</a></li>
+    <li><a href="blank.html">Корзина</a></li>
+  </ul>
+  <p>Тел.: +7 (495) 495-95-95</p>
+  <a href="https://htmlacademy.ru/intensive/htmlcss">
+    <img src="#" alt="HTML Academy">
+  </a>
+</section>
+</footer>
+
+</body>
 </html>
