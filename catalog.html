@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
-    <link rel="stylesheet" href="/1585025-device-29/css/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/1585025-device-29/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
- <header>
+<body class="catalog-body">
+ <header class="catalog-header">
   <h3>Онлайн-магазин «Девайс»</h3>
    <a href="index.html">
     <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина Девайс">
@@ -19,139 +19,142 @@
 
    <section>
     <h3>Личный кабинет</h3>
-    <a href="blank.html">Валентин Петухов</a> 
-    <a href="#">Выйти</a>
+    <a class="id-name" href="blank.html">Валентин Петухов</a> 
+    <a class="out" href="#">Выйти</a>
    </section>      
 
    <div>
-    <a href="blank.html">Сравнить</a>
-    <a href="blank.html">Корзина</a>
+    <a class="action-item" href="blank.html">Сравнить</a>
+    <a class="action-item" href="blank.html">Корзина</a>
    </div>  
 
    <nav>                      
-    <ul>
-     <li><a href="#">Каталог товаров</a></li>
-     <li><a href="blank.html">Доставка</a></li>
-     <li><a href="blank.html">Гарантия</a></li>
-     <li><a href="blank.html">Контакты</a></li>
+    <ul class="list">
+     <li class="navigation-item"><a href="#">Каталог товаров</a></li>
+     <li class="navigation-item"><a href="blank.html">Доставка</a></li>
+     <li class="navigation-item"><a href="blank.html">Гарантия</a></li>
+     <li class="navigation-item"><a href="blank.html">Контакты</a></li>
     </ul>
    </nav>  
  </header>
 
+ <main>
  <section>
   <h1>Моноподы для селфи</h1>  
-  <ul>
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="catalog.html">Каталог товаров</a></li>
-    <li><a>Моноподы для селфи</a></li>
+  <ul class="list bread-crumbs">
+    <li><a class="crumb" href="index.html">Главная</a></li>
+    <li><a class="crumb" href="catalog.html">Каталог товаров</a></li>
+    <li><a class="crumb">Моноподы для селфи</a></li>
   </ul>
  </section>
 
- <section>
-  <h2>Фильтр:</h2>
+ <section class="catalog-filter">
+  <h2 class="filter">Фильтр:</h2>
   <form><!--Здесь будет фильтр поиска--></form>
-  <button>Показать</button>
+  <button class="some-act" type="submit">Показать</button>
  </section>
 
- <section>
-  <h2>Сортировка:</h2>
-  <ul>
-    <li><a href="#">По цене</a></li>
-    <li><a href="#" class="disabled">По типу</a></li>
-    <li><a href="#" class="disabled">По популярности</a></li>
+ <section class="catalog-sort">
+  <h2 class="sort">Сортировка:</h2>
+  <ul class="list">
+    <li><a class="how-to-sort-active" href="catalog.html">По цене</a></li>
+    <li><a class="how-to-sort" href="catalog.html">По типу</a></li>
+    <li><a class="how-to-sort" href="catalog.html">По популярности</a></li>
   </ul>
  </section>
 
- <section>
+ <section class="product-list">
   <h3>Список товаров</h3>
-  <ul>
-    <li>
-     <a href="blank.html">
+  <ul class="list">
+    <li>      
       <img src="img\item-1 1.svg" alt="Любительская селфи-палка">
-      <h3>Любительская селфи-палка</h3>
-      500 руб.
-     </a>
+        <a href="blank.html">
+          <h3 class="denomination">Любительская селфи-палка</h3>          
+       </a>
+       <div class="cost">500 руб.</div>
     </li>
     <li>
-     <a href="blank.html">
       <img src="img\item-2 1.svg" alt="Профессиональная селфи-палка">
-      <h3>Профессиональная селфи-палка </h3>
-      1 500 руб.
-     </a>
+        <a href="blank.html">
+          <h3 class="denomination">Профессиональная селфи-палка </h3>        
+       </a>
+       <div class="cost">1 500 руб.</div>
     </li>
     <li>
-     <a href="blank.html">
       <img src="img\item-3 1.svg" alt="Непотопляемая селфи-палка">
-      <h3>Непотопляемая селфи-палка </h3>
-      2 500 руб.
-     </a>
+        <a href="blank.html">      
+          <h3 class="denomination">Непотопляемая селфи-палка </h3>
+       </a>
+       <div class="cost">2 500 руб.</div>
     </li>
     <li>
-     <a href="blank.html">
-      <img src="img\item-3 1.svg" alt="Селфи-палка «Следуй за мной»">
-      <h3>Селфи-палка «Следуй за мной»</h3>
-      4 900 руб.
-     </a>
+      <img src="img/item-4 1.svg" alt="Селфи-палка «Следуй за мной»">
+        <a href="blank.html">
+         <h3 class="denomination">Селфи-палка «Следуй за мной»</h3>         
+       </a>
+      <div class="cost">4 900 руб.</div>
     </li>
   </ul>    
  </section>
 
- <div>
-  <ul>
-    <li><a href="#">Назад</a></li>
-    <li><a>1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">Вперёд</a></li>
+ <div class="paginated-navigation">
+  <ul class="list">
+    <li><a class="number-of-page" href="#">Назад</a></li>
+    <li><a class="number-of-page" >1</a></li>
+    <li><a class="number-of-page passive" href="#">2</a></li>
+    <li><a class="number-of-page passive" href="#">3</a></li>
+    <li><a class="number-of-page" href="#">Вперёд</a></li>
   </ul>
 </div>
+</main>
 
- <footer>
+ <footer class="page-footer">
   <div>
    <a href="#" alt="Онлайн-магазин Девайс">
-    <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина Девайс">
+    <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
     </a>
-    <p>г.Москва, ул.Строителей, 15</p>
+    <p class="adress">г.Москва, ул.Строителей, 15</p>
   </div>
   
-  <div>
-   <ul>
-     <li><a href="blank.html">Доставка</a></li>
-     <li><a href="blank.html">Гарантия</a></li>
-     <li><a href="blank.html">Контакты</a></li>      
+  <div class="footer-info">
+    <ul class="list info-list">
+      <li ><a class="info-item"href="blank.html">Доставка</a></li>
+      <li ><a class="info-item" href="blank.html">Гарантия</a></li>
+      <li ><a class="info-item" href="blank.html">Контакты</a></li>      
   </ul> 
   </div>
-  <div>
-  <ul>
+
+ <section class="footer-social">
+  <h3>Мы в социальных сетях</h3>
+  <ul class="list social-list">
     <li><a href="blank.html">
-      <img src="#" alt="Наш аккаунт на Facebook">
+      <img class="footer-alt-text" src="img/icon_facebook.svg" alt="Наш аккаунт на Facebook">
     </a></li> 
     <li><a href="blank.html">
-      <img src="#" alt="Наш аккаунт в Instagram">
+      <img class="footer-alt-text" src="img/icon_instagram.svg" alt="Наш аккаунт в Instagram">
     </a></li> 
     <li><a href="blank.html">
-      <img src="#" alt="Наш аккаунт в Twitter">
+      <img class="footer-alt-text" src="img/icon_twitter.svg" alt="Наш аккаунт в Twitter">
     </a></li>   
   </ul>
-  </div>
+ </section>
   
   <section>
     <h3>Личный кабинет</h3>
-    <a href="blank.html">Валентин Петухов</a> 
-    <a href="#">Выйти</a>
+    <a class="enter" href="blank.html">Валентин Петухов</a> 
+    <a class="enter" href="#">Выйти</a>
   </section> 
 
   <div>
-   <a href="blank.html">Сравнить</a>
-   <a href="blank.html">Корзина</a>
+   <a class="function" href="blank.html">Сравнить</a>
+   <a class="function" href="blank.html">Корзина</a>
   </div> 
 
-  <div>
-    <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+  <div class="footer-others">
+    <p><a class="tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
     <p><a href="https://htmlacademy.ru/intensive/htmlcss">
-     <img src="#" alt="HTML Academy">
-      </a>
-    </p>
+     <img src="img/html-academy.svg" alt="HTML Academy">
+      </a></p>
   </div>
   </footer>
   </body>

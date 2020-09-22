@@ -52,7 +52,7 @@ body {
     min-width: 1160px;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 300px;
@@ -62,30 +62,74 @@ body {
     background-position: top center;
 } 
 
+.catalog-body{
+    min-width: 1160px;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300px;
+    color: var(--basic-black);
+    text-transform: none;
+    background-color: var(--white-30);
+    background-position: top center;
+
+}
+
 a {
     text-decoration: none;
     color: var(--basic-black);
 }  
-  img {
+
+img {
     max-width: 100%;
     height: auto;
 }
 
-ul{
-    margin-left: 0; 
-    padding-left: 0;
-    width: 220px;
-    list-style-type: none;
+/*ul Lists*/
+ 
+.list{
+    padding: 0px;
+   list-style: none;
 }
+
+
 
 /* Header */
 
+.main-header{
+    padding: 20px 40px;
+}
 .action-item{
     font-family: "Open Sans Light", "Arial", sans-serif ;
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
     color: var(--basic-black);
+}
+
+.catalog-header{
+    padding: 20px 40px;
+}
+
+.id-name{
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--basic-black);
+
+}
+
+.out{
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 /* Navigation */
@@ -99,6 +143,35 @@ ul{
     letter-spacing: 0.2em;
     color: var(--basic-black);
 }
+
+/*Main*/
+.container{
+    padding: 85px 40px;
+}
+
+h1{
+    font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+    color: var(--basic-black);
+}
+
+/*Catalog Bread Crumbs*/
+
+.bread-crumbs{
+    list-style-type: none;
+}
+.crumb{
+    font-family: "Open Sans Light","Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
 /* Slider Product */
 
 .do-selfie{
@@ -136,6 +209,19 @@ ul{
     letter-spacing: 0.1em;
     color: var(--basic-black);
 }
+/*Filter & Sort*/
+
+.filter,
+.sort{
+    font-family: "Gilroy Extra Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
 
 /* Categories */
 
@@ -150,6 +236,7 @@ ul{
 }
 
 /*Slider Info*/
+
 .caption{
     font-family: "Gilroy Extra Bold";
     font-style: normal;
@@ -171,7 +258,76 @@ ul{
 
 }
 
-/*Partners pictures*/
+a.alink {
+    background: url(../img/partner\ 1.svg) no-repeat; /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    
+}
+a.alink:hover {
+    background: url(../img/partner-color-1.svg) no-repeat;
+}
+
+/*Catalog Product-list*/
+
+.how-to-sort-active{
+    font-family: "Open Sans Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--basic-black);
+}
+
+.how-to-sort{
+    font-family: "Open Sans Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.denomination{
+    font-family: "Gilroy Extra Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: var(--basic-black);
+}
+
+.cost{
+    font-family: "Gilroy Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: var(--basic-black);
+}
+
+.number-of-page{
+    font-family: "Gilroy Extra Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.passive{
+    font-family: "Gilroy Extra Bold";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+}
 
 /*About Us & Contacts*/
 
@@ -182,13 +338,12 @@ ul{
     line-height: 28px;
     font-weight: 300;
     color: var(--basic-black);
-
 }
 
-/*.transport-companies{
-    list-style-type: circle;
+.transport-companies{
+    padding: 20px;
+    list-style-type: circle ;
 }
-*/
 
 .transport-company{
     font-family: "Gilroy Extra Bold";
@@ -197,11 +352,11 @@ ul{
     font-weight: 800;
     line-height: 28px;
     color: var(--basic-black); 
-    /*Нужно ли применять шрифты к альтернативному тексту?*/
 }
 
 /*Footer*/
-.main-footer{
+.page-footer{
+    padding: 65px 40px ;
     background-color: var(--basic-dark);
 }
 
@@ -223,7 +378,7 @@ ul{
     text-transform: uppercase;
     color: var(--basic-white);
 }
-.footer-description{
+.footer-alt-text{
     font-family: "Open Sans Light";
     font-style: normal;
     font-size: 15px;
@@ -232,7 +387,8 @@ ul{
     color: var(--basic-white);
 }
 
-.item-link{
+.enter,
+.function{
     font-family: "Open Sans Light";
     font-style: normal;
     font-size: 15px;
@@ -240,6 +396,7 @@ ul{
     font-weight: 300;
     color: rgba(255, 255, 255, 0.7); 
 }
+
 
 .tel{
     font-family: "Open Sans Light";
@@ -250,24 +407,25 @@ ul{
     color: var(--basic-white);
 }
 
-/*Buttons*/
+/*Buttons & Switchers*/
 
-.button{
+.switcher,
+.some-act{
     font-family: "Gilroy Extra Bold", "Arial", sans-serif ;
     font-size: 18px;
     line-height: 22px;
     font-weight: 800;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
     letter-spacing: 0.2em;
     color: var(--basic-black);
     background-color: var(--special-yellow-dark);
-   
-   
+    border: none;
+
 }
 
-
-.button:hover {
+.switcher:hover,
+.some-act:hover {
     font-family: "Gilroy Extra Bold", "Arial", sans-serif ;
     font-size: 18px;
     line-height: 22px;
@@ -277,11 +435,25 @@ ul{
     letter-spacing: 0.2em;
     color: var(--basic-black);
     background-color: var(--special-yellow-dark);
-        
+    border: none;
+    
+   
 }    
 
-/*
-.button:active {
+.switcher:active{
+    font-family: "Gilroy Extra Bold", "Arial", sans-serif ;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--special-yellow);
+    background-color: var(--basic-black);
+    border: none;
+}
+
+.some-act:active {
     font-family: "Gilroy Extra Bold", "Arial", sans-serif ;
     font-size: 18px;
     line-height: 22px;
@@ -291,5 +463,6 @@ ul{
     letter-spacing: 0.2em;
     color: rgba(000, 000, 000, 0.3);
     background-color: var(--special-yellow-dark);
-    
-}*/
+    border: none;
+}
+

@@ -11,13 +11,13 @@
     <header class="main-header">
       <div>
       <h3>Онлайн-магазин «Девайс»</h3>
-      <a class="main-header-logo" href="#">
-       <img class="description" src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина Девайс">
+       <a class="main-header-logo" href="#">
+       <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина Девайс">
      </a>
      </div>
 
      <div class="header-actions">
-      <ul class="actions-list">      
+      <ul class="list actions-list">      
        <li class="action-item"><a href="blank.html">Войти</a></li>
        <li class="action-item"><a href="blank.html">Сравнить</a></li>
        <li class="action-item"><a href="blank.html">Корзина</a></li>
@@ -25,7 +25,7 @@
      </div>
 
       <nav class="main-navigation">                      
-        <ul class="site-navigation">
+        <ul class="list site-navigation">
           <li class="navigation-item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="navigation-item"><a href="blank.html">Доставка</a></li>
           <li class="navigation-item"><a href="blank.html">Гарантия</a></li>
@@ -41,7 +41,7 @@
        <p class="do-selfie">Делай селфи,<br>как Бен Стиллер!</p>
        <p class="product-description">Самая длинная палка для селфи доступна в нашем магазине.<br> 
         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-       <a class="button" href="catalog.html">Подробнее</a>      
+       <a class="some-act" href="catalog.html">Подробнее</a>      
        <table class="product specifications">
         <tr class="specifications values">
          <td class="value">8,5 м</td>
@@ -58,34 +58,35 @@
 
     <section class="categories">
      <h3>Разделы каталога товаров</h3>
-      <ul>
-        <li class="category"><a href="catalog.html"><img src="">Виртуальная реальность</a></li>
-        <li class="category"><a href="catalog.html"><img src="">Моноподы для селфи</a></li>
-        <li class="category"><a href="catalog.html"><img src="">Экшн-камеры</a></li>
-        <li class="category"><a href="catalog.html"><img src="">Фитнес-браслеты</a></li>
-        <li class="category"><a href="catalog.html"><img src="">Умные часы</a></li>
-        <li class="category"><a href="catalog.html"><img src="">Квадрокоптеры</a></li>
+      <ul class="list list-categories ">
+        <li ><a class="category" href="catalog.html"><img src="img/category-1.svg">Виртуальная реальность</a></li>
+        <li ><a class="category" href="catalog.html"><img src="img/category-2.svg">Моноподы для селфи</a></li>
+        <li ><a class="category" href="catalog.html"><img src="img/category-3.svg">Экшн-камеры</a></li>
+        <li ><a class="category" href="catalog.html"><img src="img/category-4.svg">Фитнес-браслеты</a></li>
+        <li ><a class="category" href="catalog.html"><img src="img/category-5.svg">Умные часы</a></li>
+        <li ><a class="category" href="catalog.html"><img src="img/category-6.svg">Квадрокоптеры</a></li>
       </ul>
     </section>
 
     <section class="slider">
      <h3>Слайдер:Доставка</h3>
-     <ul class="slider-list">
-        <li class="button"><a href="#">Доставка</a></li>
-        <li class="button"><a href="blank.html">Гарантия</a></li>
-        <li class="button"><a href="blank.html">Кредит</a></li>
+     <ul class="list slider-list">
+        <li><button class="switcher" type="button">Доставка</a></li>
+        <li><button class="switcher" type="button">Гарантия</a></li>
+        <li><button class="switcher" type="button">Кредит</a></li>
     </ul>
     <h2 class="caption">Доставка</h2>
       <p class="slider-description">Мы с удовольствием доставим ваш товар прямо к вашему<br> 
           подъезду совершенно бесплатно! Ведь мы неплохо <br>
-          заработаем, поднимая его на ваш этаж.</p>
+          заработаем, поднимая его на ваш этаж.</p>          
+    <img src="img/delivery man.svg" width="136" height="164">
     </section>
 
-    <section class="partners"> <!--нужно ли создавать класс для каждого изображения, чтобы потом задать размеры, расположение и тд?-->
-    <img class="description" src="img/partner 1.svg" alt="GJI">
-    <img class="description" src="img/partner 2.svg" alt="SP.Gadgets">
-    <img class="description" src="img/partner 3.svg" alt="GoPro">
-    <img class="description" src="img/partner 4.svg" alt="VIVE">
+    <section class="partners">
+    <a class="alink"><img class="partner1" src="img/partner 1.svg" alt="GJI"></a>
+    <img class="partner2" src="img/partner 2.svg" alt="SP.Gadgets">
+    <img class="partner3" src="img/partner 3.svg" alt="GoPro">
+    <img class="partner4" src="img/partner 4.svg" alt="VIVE">
     </section>
 
     <section class="about-us">
@@ -94,12 +95,12 @@
        который есть в каждом из нас.</p>
       <p class="description">Мы можем доставить ваш товар в самые отдаленные точки<br>
       России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="transport-companies">
+        <ul class="list transport-companies">
           <li class="transport-company">Деловые линии</li>
           <li class="transport-company">Автотрейдинг</li>
           <li class="transport-company">ЖелДор Экспедиция</li>
         </ul> 
-        <a class="button" href="blank.html">Подробнее о нас</a>
+        <a class="some-act" href="blank.html">Подробнее о нас</a>
     </section>
 
     <section class="contacts">
@@ -107,20 +108,20 @@
       <p class="description"> Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
       проверить работоспособность покупки. Всякое бывает.</p>
       <img class="description" src="img/map.svg" alt="Местоположение нашего офиса" width="560" height="222">
-      <p><a class="button" href="blank.html">Напишите нам</a></p>
+      <p><a class="some-act" href="blank.html">Напишите нам</a></p>
     </section>
   </main>
 
-<footer class="page-footer main-footer">
+<footer class="page-footer">
  <div class="footer-logo-adress">
  <a class="main-footer-logo" href="#" alt="Онлайн-магазин Девайс">
-  <img class="description" src="img/logo-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
+  <img src="img/logo-footer.svg" width="163" height="35" alt="Логотип магазина Девайс">
   </a>
   <p class="adress">г.Москва, ул.Строителей, 15</p>
 </div>
 
  <div class="footer-info">
-  <ul class="info-list">
+  <ul class="list info-list">
     <li ><a class="info-item"href="blank.html">Доставка</a></li>
     <li ><a class="info-item" href="blank.html">Гарантия</a></li>
     <li ><a class="info-item" href="blank.html">Контакты</a></li>      
@@ -129,25 +130,27 @@
 
 <section class="footer-social">
   <h3>Мы в социальных сетях</h3>
-<ul class="social-list">
-  <li class="social-item"><a href="blank.html"><img class="footer-description" src="img/icon_facebook.svg" alt="Наша страница на Facebook"></a></li> 
-  <li class="social-item"><a href="blank.html"><img class="footer-description" src="img/icon_instagram.svg" alt="Наша Instagram страница"></a></li> 
-  <li class="social-item"><a href="blank.html"><img class="footer-description" src="img/icon_twitter.svg" alt="Наша страница на Twitter"></a></li>   
+<ul class="list social-list">
+  <li class="social-item"><a href="blank.html"><img class="footer-alt-text" src="img/icon_facebook.svg" alt="Наша аккаунт на Facebook"></a></li> 
+  <li class="social-item"><a href="blank.html"><img class="footer-alt-text" src="img/icon_instagram.svg" alt="Наша аккаунт в Instagram"></a></li> 
+  <li class="social-item"><a href="blank.html"><img class="footer-alt-text" src="img/icon_twitter.svg" alt="Наша аккаунт в Twitter"></a></li>   
 </ul>
  </section>
 
- <div class="footer-actions">
-  <ul class="actions-list">
-    <li class="action-item"><a class="item-link" href="blank.html">Войти</a></li>
-    <li class="action-item"><a class="item-link" href="blank.html">Сравнить</a></li>
-    <li class="action-item"><a class="item-link" href="blank.html">Корзина</a></li>
-  </ul>  
- </div>
+ <section>
+    <h3>Личный кабинет</h3>
+    <a class="enter" href="blank.html">Войти</a>
+ </section>  
+
+ <div>
+  <a class="function" href="blank.html">Сравнить</a>
+  <a class="function" href="blank.html">Корзина</a>
+  </div>
 
   <div class="footer-others">
-  <a class="tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-  <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
-    <img class="footer-description" src="img/html-academy.svg" alt="HTML Academy">
+    <p><a class="tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+    <p><a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss"></p>  
+    <img class="footer-alt-text" src="img/html-academy.svg" alt="HTML Academy">
   </a>
 </div>
 </footer>
