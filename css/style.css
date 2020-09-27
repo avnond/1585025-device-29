@@ -48,6 +48,10 @@
 
 /* Global */
 
+.page{
+    height: 100%;
+}
+
 body {
     min-width: 1160px;
     margin: 0;
@@ -94,19 +98,50 @@ img {
    list-style: none;
 }
 
-
-
+/*Body*/
+.page-body{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
 /* Header */
 
 .main-header{
-    padding: 20px 40px;
+    margin: 40px 140px;
 }
+.main-header-logo{
+}
+
+.main-navigation-bar{
+    background-color: var(--special-yellow);
+}
+
+.header-container{
+    width: 1040px;
+    padding: 40px 60px;
+
+}
+
+.main-navigation-container{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.main-navigation{
+    display: grid;
+}
+
 .action-item{
     font-family: "Open Sans Light", "Arial", sans-serif ;
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
+    text-align: center;
     color: var(--basic-black);
+    float: left;    
+    margin-right: 20px;
 }
 
 .catalog-header{
@@ -132,8 +167,6 @@ img {
     color: rgba(0, 0, 0, 0.3);
 }
 
-/* Navigation */
-
 .navigation-item{
     font-family: "Gilroy Extra Bold", "Arial", sans-serif ;
     font-size: 18px;
@@ -142,11 +175,16 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: var(--basic-black);
+    float: left;
+    margin-right: 20px;
 }
 
 /*Main*/
 .container{
-    padding: 85px 40px;
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0 10px;
+
 }
 
 h1{
@@ -209,6 +247,12 @@ h1{
     letter-spacing: 0.1em;
     color: var(--basic-black);
 }
+
+.product{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 /*Filter & Sort*/
 
 .filter,
@@ -257,16 +301,43 @@ h1{
     letter-spacing: 0.1em;
 
 }
+/*Можно ли каким-либо образом сократить код ниже?*/
 
-a.alink {
+a.coloring-1 {
     background: url(../img/partner\ 1.svg) no-repeat; /* Путь к файлу с исходным рисунком  */
     display: block; /*  Рисунок как блочный элемент */
     
 }
-a.alink:hover {
+a.coloring-1:hover {
     background: url(../img/partner-color-1.svg) no-repeat;
 }
 
+a.coloring-2 {
+    background: url(../img/partner\ 2.svg) no-repeat; /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    
+}
+a.coloring-2:hover {
+    background: url(../img/partner-color-2.svg) no-repeat;
+}
+
+a.coloring-3 {
+    background: url(../img/partner\ 3.svg) no-repeat; /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    
+}
+a.coloring-3:hover {
+    background: url(../img/partner-color-3.svg) no-repeat;
+}
+
+a.coloring-4{
+    background: url(../img/partner\ 4.svg) no-repeat; /* Путь к файлу с исходным рисунком  */
+    display: block; /*  Рисунок как блочный элемент */
+    
+}
+a.coloring-4:hover {
+    background: url(../img/partner-color-4.svg) no-repeat;
+}
 /*Catalog Product-list*/
 
 .how-to-sort-active{
@@ -355,9 +426,24 @@ a.alink:hover {
 }
 
 /*Footer*/
+
 .page-footer{
-    padding: 65px 40px ;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 500px 400px 500px;
     background-color: var(--basic-dark);
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+
+}
+
+.left-block{
+    width: 400px;
+    margin-top: 64px;
+    outline: 5px solid rgba(0, 255, 255, 0.7);
+    outline-offset: -5px;
+
 }
 
 .adress{
@@ -367,7 +453,25 @@ a.alink:hover {
     line-height: 20px;
     font-weight: 300;
     color: var(--basic-white);
+    margin-top: 40px;
 }
+
+.info-list{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.social-list{
+    width: 160px;
+    outline: 5px solid rgba(30, 255, 0, 0.7);
+    outline-offset: -5px;
+}
+
+.social-item{
+    margin-right: 20px;
+    float: left;
+}
+
 .info-item{
     font-family: "Gilroy Extra Bold";
     font-style: normal;
@@ -377,6 +481,23 @@ a.alink:hover {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--basic-white);
+}
+
+.middle-block{   
+    width: 500px;
+    margin: 138px auto;
+    outline: 5px solid rgba(255, 0, 170, 0.7);
+    outline-offset: -5px;
+
+}
+
+.right-block{
+    width: 400px;
+    height: min-content;
+    margin: 46px 140px;    
+    outline: 5px solid rgba(255, 251, 0, 0.7);
+    outline-offset: -5px;
+
 }
 .footer-alt-text{
     font-family: "Open Sans Light";
