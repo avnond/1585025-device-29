@@ -74,15 +74,31 @@
     <section class="catalog-sort">
       <h2 class="sort">Сортировка:</h2>
       <ul class="list sort-list">
-        <li><a class="how-to-sort how-to-sort-active" href="catalog.html">По цене</a></li>
+        <li><a class="how-to-sort active" href="catalog.html">По цене</a></li>
         <li><a class="how-to-sort" href="catalog.html">По типу</a></li>
         <li><a class="how-to-sort" href="catalog.html">По популярности</a></li>
-     </ul>
-   </section>
+     </ul> 
+
+     <div class="sort-ways">
+       <button class="polygone polygone-1" type="button">
+        <svg class="polygone-img" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 10H11L5.5 0L0 10Z" fill="black"/>
+        </svg>
+       </button>
+
+       <button class="polygone polygone-2" type="button">
+        <svg class="polygone-img" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 0L0 0L5.5 10L11 0Z" fill="black"/>
+        </svg>
+       </button> 
+    </div>   
+    </section>
+
+    
 
     <section class="catalog-filter">     
       <form><!--Здесь будет фильтр поиска--></form>
-      <button class="some-act" type="submit">Показать</button>
+      <button class="some-act catalog-show" type="submit">Показать</button>
     </section>
 
     <section class="product-container">
@@ -152,8 +168,8 @@
     <div class="catalog-cabinet">         
       <a class="id-name-function" href="blank.html">
         <svg class="catalog-footer-icons id-icon" width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.49996 0.333252C5.69704 0.333252 6.66663 1.37742 6.66663 2.66659C6.66663 3.95575 5.69704 4.99992 4.49996 4.99992C3.30288 4.99992 2.33329 3.95575 2.33329 2.66659C2.33329 1.37742 3.30288 0.333252 4.49996 0.333252ZM4.49996 9.66659C4.49996 9.66659 8.83329 9.66659 8.83329 8.49992C8.83329 7.09992 6.72079 5.58325 4.49996 5.58325C2.27913 5.58325 0.166626 7.09992 0.166626 8.49992C0.166626 9.66659 4.49996 9.66659 4.49996 9.66659Z" fill="#FFC600"/>
-          </svg>
+          <path d="M4.50008 0.333374C5.69716 0.333374 6.66675 1.37754 6.66675 2.66671C6.66675 3.95587 5.69716 5.00004 4.50008 5.00004C3.303 5.00004 2.33341 3.95587 2.33341 2.66671C2.33341 1.37754 3.303 0.333374 4.50008 0.333374ZM4.50008 9.66671C4.50008 9.66671 8.83341 9.66671 8.83341 8.50004C8.83341 7.10004 6.72091 5.58337 4.50008 5.58337C2.27925 5.58337 0.166748 7.10004 0.166748 8.50004C0.166748 9.66671 4.50008 9.66671 4.50008 9.66671Z" fill="#F7E296"/>
+        </svg>
         Валентин Петухов  
       </a>
 
@@ -164,7 +180,7 @@
         <a class="function" href="blank.html">
           <svg class="catalog-footer-icons" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.916748 3.36675H2.66675V9.08342H0.916748V3.36675ZM4.18342 0.916748H5.81675V9.08342H4.18342V0.916748ZM7.45008 5.58342H9.08342V9.08342H7.45008V5.58342Z" fill="#FFC600"/>
-            </svg>
+          </svg>
           Сравнить
         </a>
 
@@ -180,9 +196,8 @@
     
   <div class="catalog-footer-flex">
 
-    <div class="catalog-left-block">
+    <div class="left-block">
       <p class="adress">г. Москва, ул. Строителей, 15</p>
-      <!-- <img class="footer-line" src="img/yellow-rectangle.svg" width="80" height="7"> -->
     </div>  
 
     <div class="catalog-middle-block">   
