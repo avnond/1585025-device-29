@@ -78,7 +78,7 @@
    <main class="main-container"> 
      <section class="main-slider">
        <ul class="list product-slider-list">
-         <li class="product-slider-item visually-hidden">
+         <li class="product-slider-item slide slide-current">
           <section class="product-block">
             <span class="slider-number number-1">01</span>  
             <img class="picture-product-1" src="img/slider-1.png" width="384" height="486" alt="Три чёрно-синих селфи-палки с мягкими рукоятками">
@@ -105,7 +105,7 @@
          </section>
         </li>
 
-        <li class="product-slider-item">
+        <li class="product-slider-item slide">
           <section class="product-block">
             <span class="slider-number">02</span> 
             <img class="picture-product-2" src="img/slider-2.png" width="345" height="485" alt="Черный мотивирующий фитнес-браслет с надписью «Я вижу, что ты снова ешь» на дисплее">
@@ -128,7 +128,7 @@
          </section>
         </li>
 
-         <li class="product-slider-item visually-hidden">
+         <li class="product-slider-item slide">
           <section class="product-block">
             <span class="slider-number">03</span>
             <img class="picture-product-3" src="img/slider-3.png" width="526" height="334" alt="Летающий черно-белый квадрокоптер с красным лазером-камерой">
@@ -152,14 +152,19 @@
               </div>
             </div>
          </section>
-         </li>
-       </ul>
-     
+         </li>         
+       </ul>  
+       <div class="slider-controls">
+          <button class="slider-control-1 current" type="button" aria-label="Первый слайд"></button>
+          <button class="slider-control-2" type="button" aria-label="Второй слайд"></button>
+          <button class="slider-control-3" type="button" aria-label="Третий слайд"></button>
+       </div>   
+     </section>
    
 
     <section class="categories">      
-      <ul class="list list-categories">
-        <h2 class="visually-hidden">Популярные категории товаров</h2>
+      <h2 class="visually-hidden">Популярные категории товаров</h2>
+      <ul class="list list-categories">        
         <li class="category-item">
           <a class="category" href="catalog.html">
             <svg class="category-picture" width="97" height="55" viewBox="0 0 97 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -237,54 +242,44 @@
       </ul>    
     </section>
 
-    <section class="slider-1">      
+    <section class="services">
       <h3 class="visually-hidden">Воспользуйтесь нашими сервисами</h3>
-      <div class="services-background"></div>          
+      <div class="services-background"></div>  
+
       <ul class="list slider-list">
         <li><button class="switcher switcher-1 switcher-current" type="button">Доставка</button></li>
         <li><button class="switcher switcher-2 switcher-inactive" type="button">Гарантия</button></li>
         <li><button class="switcher switcher-3 switcher-inactive" type="button">Кредит</button></li>
-      </ul>        
-      <div class="text-slider">
-        <h2 class="caption-slider">Доставка</h2>
-        <p class="slider-description">Мы с удовольствием доставим ваш товар прямо к вашему<br>подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж.</p>         
-      </div> 
-      <div class="slider-1-img"></div>            
-    </section>   
+      </ul>  
 
-    <section class="slider-2 visually-hidden">      
-      <h3 class="visually-hidden">Воспользуйтесь нашими сервисами</h3>
-      <div class="services-background"></div>          
-      <ul class="list slider-list">
-        <li><button class="switcher switcher-1 switcher-inactive" type="button">Доставка</button></li>
-        <li><button class="switcher switcher-2 switcher-current" type="button">Гарантия</button></li>
-        <li><button class="switcher switcher-3 switcher-inactive" type="button">Кредит</button></li>
-      </ul>        
-      <div class="text-slider">
-        <h2 class="caption-slider">Гарантия</h2>
-        <p class="slider-description">Если из-за возгорания купленного у нас товара у вас сгорит дом —<br> 
-          не переживайте, мы выдадим вам новый.<br>
-          Товар, не дом, конечно же.</p>         
-      </div> 
-      <div class="slider-2-img"></div>            
-    </section> 
+      <section class="slider-1">              
+        <div class="text-slider">
+          <h2 class="caption-slider">Доставка</h2>
+          <p class="slider-description">Мы с удовольствием доставим ваш товар прямо к вашему<br>подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж.</p>         
+        </div> 
+        <div class="slider-1-img"></div>            
+      </section>   
 
-    <section class="slider-3 visually-hidden">      
-      <h3 class="visually-hidden">Воспользуйтесь нашими сервисами</h3>
-      <div class="services-background"></div>          
-      <ul class="list slider-list">
-        <li><button class="switcher switcher-1 switcher-inactive" type="button">Доставка</button></li>
-        <li><button class="switcher switcher-2 switcher-inactive" type="button">Гарантия</button></li>
-        <li><button class="switcher switcher-3 switcher-current" type="button">Кредит</button></li>
-      </ul>        
-      <div class="text-slider">
-        <h2 class="caption-slider">Кредит</h2>
-        <p class="slider-description">Залезть в долговую яму стало проще! Кредитные консультанты<br> 
-          подберут для вас наиболее выгодные<br> 
-          условия кредита. Выгодные для нашего банка, разумеется.</p>         
-      </div> 
-      <div class="slider-3-img"></div>            
-    </section> 
+      <section class="slider-2 visually-hidden"> 
+        <div class="text-slider">
+          <h2 class="caption-slider">Гарантия</h2>
+          <p class="slider-description">Если из-за возгорания купленного у нас товара у вас сгорит дом —<br> 
+            не переживайте, мы выдадим вам новый.<br>
+            Товар, не дом, конечно же.</p>         
+        </div> 
+        <div class="slider-2-img"></div>            
+      </section> 
+
+      <section class="slider-3 visually-hidden"> 
+        <div class="text-slider">
+          <h2 class="caption-slider">Кредит</h2>
+          <p class="slider-description">Залезть в долговую яму стало проще! Кредитные консультанты<br> 
+            подберут для вас наиболее выгодные<br> 
+            условия кредита. Выгодные для нашего банка, разумеется.</p>         
+        </div> 
+        <div class="slider-3-img"></div>            
+      </section>
+    </section>  
 
     <section class="partners">
       <h3 class="visually-hidden">В каталоге представлены бренды</h3>
@@ -370,8 +365,8 @@
         </div>
 
         
+        <h3 class="visually-hidden">Мы с социальных сетях</h3>
         <ul class="list social-list">
-          <h3 class="visually-hidden">Мы с социальных сетях</h3>
            <li class="social-item">
              <a href="blank.html">
                <svg class="social-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -408,7 +403,7 @@
     </div>           
     </footer>
 
-    <section class="modal modal-write">
+    <section class="modal-write">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="write-form">
         <div>
@@ -423,16 +418,21 @@
           <label class="label-write" for="user-letter">Текст письма:</label>
           <textarea class="write-input your-letter-input" name="user-letter" id="user-letter" placeholder="В свободной форме" required></textarea>
         </div><br>
-        <button class="some-act post" type="submit" method="post">Отправить</button>
+        <button class="some-act post" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть форму отправки сообщения">
       </button>
     </section>
     
-    <section class="modal modal-map">
+    <section class="modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877995!2d37.52742931596055!3d55.687030980535866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1603195253386!5m2!1sen!2sru" width="994" height="593" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <button class="modal-close" type="button" aria-label="Закрыть карту">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877995!2d37.52742931596055!3d55.687030980535866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1603195253386!5m2!1sen!2sru" width="994" height="593" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
     </section>
+
+<script src="js/write_form.js"></script>  
+<script src="js/modal-map.js"></script> 
+<script src="js/product-slider.js"></script>  
+<script src="js/services.js"></script>  
 </body>
 </html>
