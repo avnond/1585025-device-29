@@ -30,11 +30,15 @@ writeLink.addEventListener("click", function (evt) {
 writeClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     writePopup.classList.remove("modal-show");
+    writePopup.classList.remove("modal-error");
   });
 
 writeForm.addEventListener("submit", function (evt) {
-    if (!writeName.value || !writeEmail.value || !writeLetter.value){
+    if (!writeName.value || !writeEmail.value){
         evt.preventDefault();
+        writePopup.classList.add("modal-error");        
+        writePopup.offsetWidth = writePopup.offsetWidth;
+        writePopup.classList.add("modal-error");  
     } else{
         if(isStorageSupport){
             localStorage.setItem('name', writeName.value);
@@ -43,4 +47,12 @@ writeForm.addEventListener("submit", function (evt) {
     }    
   });
 
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (writePopup.classList.contains("modal-show")) {
+        evt.preventDefault();
+        writePopup.classList.remove("modal-show");
+      }
+    }
+});
   
