@@ -1,20 +1,22 @@
 @font-face {
-    font-family: 'Gilroy Extra Bold';
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 800;
     src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
          url("..fonts/gilroyextrabold.woff") format("woff");
 }   
+
  @font-face {
-    font-family: 'Gilroy Light';
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 300;
     src: url("../fonts/gilroylight.woff2") format("woff2"),
          url("../fonts/gilroylight.woff") format("woff");
     
 } 
+
 @font-face {
-    font-family: 'Open Sans Regular';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/opensans.woff2") format("woff2"), 
@@ -22,7 +24,7 @@
 }    
 
 @font-face {
-    font-family: "Open Sans Light";
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
     src: url("../fonts/opensanslight.woff2") format("woff2"), 
@@ -65,7 +67,7 @@ body{
     min-width: 1160px;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 300;
@@ -107,91 +109,28 @@ img {
 
 /*Main Body*/
 .page-body{
-    min-height: 100%;
-    position: relative;
-}
-
-/* Blank */
-
-.body-blank{
     width: 100%;
     height: 100%;
-    background-color: var(--special-yellow);
 }
 
-.main-blank{
-    width: 650px;
-    height: 600px;
-    margin-top: 130px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif ;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--basic-black);
-}
-
-.blank-text{
-    margin-top: 60px;
-    font-size: 30px;
-    line-height: 50px;
-}
-
-.blank-text span{
-    font-size: 40px;
-    line-height: 50px;
-}
-
-.block-blank{
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 650px;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.link-blank{
-    width: max-content;
-    height: max-content;
-    padding: 10px 20px;
-    background-color: var(--special-yellow-dark); 
-}
-
-.link-blank:hover{
-    opacity: 0.7;
-}
-
-.link-blank:active{
-    opacity: 0.3;
-}
 
 /* Header */
-
 .page-body .main-header{
     display: flex;
     flex-direction: column;
     width: 1160px;
-    margin: 44px auto 0 auto;
+    margin: 40px auto 0 auto;
     padding-bottom: 164px;
     background-color: var(--special-yellow);
     position: relative;
     
 }
 
-
 .catalog-body .main-header{
     display: flex;
     flex-direction: column;
     width: 1160px;
-    margin: 44px auto 0 auto;
+    margin: 40px auto 0 auto;
     padding-bottom: 50px;
     background-color: var(--special-yellow);
     position: relative;
@@ -217,12 +156,18 @@ img {
     margin-left: 60px;
 }
 
-.device-logo:hover{
-    fill-opacity: 0.6;
+/* не исчезает outline */
+
+.device-header:hover{
+    opacity: 0.6;
+    outline: 0;
+    border: 0;
 }
 
-.device-logo:active{
-    fill-opacity: 0.3;
+.device-header:active{
+    opacity: 0.3;
+    border: 0;
+    outline: 0;
 }
 
 /* Forms */
@@ -234,8 +179,15 @@ img {
     margin: 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    
+    align-items: flex-start;    
+}
+
+.search-icon{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
 }
 
 .search-label{
@@ -248,7 +200,7 @@ img {
     border: none;
     background: none;
     outline: none;
-    font-family: "Open Sans Light" ,"Tahoma", sans-serif;
+    font-family: "Open Sans" ,"Tahoma", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -330,14 +282,14 @@ img {
 
 .actions-list{ 
     margin: 0;
-    margin-top: 15px;
-    width: 500px;
+    margin-top: 17px;
+    width: 498px;
     display: flex;
     flex-direction: row;
 }
 
 .action-item{
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
@@ -359,10 +311,28 @@ img {
 }
 
 .action-img-index{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
     margin-right: 10px;
+    background-repeat: no-repeat;
+}
+
+.action-img-enter{    
+    background-image: url(../img/id.svg);
+}
+
+.action-img-compare{    
+    background-image: url(../img/compare.svg);
+}
+
+.action-img-basket{    
+    background-image: url(../img/basket.svg);
 }
 
 .main-navigation{
+    position: relative;
+    z-index: 2;
     padding: 0;
     margin: 0;
     display: flex;
@@ -382,7 +352,7 @@ img {
 .navigation-item{
     margin: 0;
     padding: 0;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif ;
+    font-family: "Gilroy", "Tahoma", sans-serif ;
     font-size: 18px;
     line-height: 22px;
     font-weight: 800;
@@ -418,6 +388,10 @@ img {
 }
 
 .nav-icon-plus{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/plus.svg);
     margin-left: 8px;
     margin-top: 4px;
 }
@@ -428,7 +402,7 @@ img {
 }
 
 .inner-block{
-    font-family: "Open Sans Light", "Tahoma", sans-serif ;
+    font-family: "Open Sans", "Tahoma", sans-serif ;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -463,14 +437,9 @@ img {
     cursor: pointer;
 }
 
-.bgc{
-    width: 300px;
-    height: auto;
-    background-color: darkslategrey;
-}
-
 .navigation-item:hover .inner-list,
-.navigation-item:focus .inner-list{
+.navigation-item:focus .inner-list,
+.navigation-item:active .inner-list{
     display: block;
 }
 
@@ -484,7 +453,7 @@ img {
     display: grid;
     grid-template-rows: repeat(3, auto);
 
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 300px;
@@ -519,7 +488,7 @@ img {
 }
 
 .catalog-action-item{
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
@@ -536,7 +505,7 @@ img {
 }
 
 .catalog-action-item:nth-child(3){
-    margin-right: 40px;
+    margin-right: 43px;
 }
 
 .catalog-action-item:hover{
@@ -548,11 +517,20 @@ img {
 }
 
 .action-img{
-    margin-right: 13px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.action-img-valentin{
+    background-image: url(../img/id.svg);
+
 }
 
 .id-name{
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 15px;
     font-weight: 300;
@@ -561,7 +539,8 @@ img {
 }
 
 .out{
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    margin-right: 5px;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 15px;
     font-weight: 300;
@@ -572,6 +551,41 @@ img {
 
 /*Catalog Product-list*/
 
+.catalog-wrapper {
+    margin-top: 50px;
+	display: grid;
+	grid-template-rows: auto auto;
+    grid-template-columns: auto 328px 833px auto;
+}
+
+.wr1 {
+	background-color: #DCDCDC;
+}
+
+.wr3 {
+	background-color: yellow;
+}
+
+.wr4 {
+	background-color: var(--basic-grey-light);
+}
+
+.wr5 {
+	background-color: var(--basic-grey-light);
+}
+
+.wr6 {
+    background-color: var(--basic-grey-light);
+}
+
+.wr7 {
+	background-color: var(--basic-white);
+}
+
+.wr8 {
+	background-color: var(--basic-white);
+}
+
 .catalog-heading-block{
     box-sizing: border-box;
     margin: 44px auto 0 auto;
@@ -580,10 +594,9 @@ img {
     height: auto;
 } 
 
-
 .catalog-heading{
     margin: 0;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
@@ -591,24 +604,44 @@ img {
     color: var(--basic-black);    
 }
 
-.catalog-grid{
-    margin-top: 50px;
+.catalog-container{
     display: grid;
-    justify-content: center;
-    grid-template-columns: 468px 972px;
-    grid-template-rows: 70px auto;
+    grid-template-columns: 1fr 1.779fr;
 }
 
-.text-filter{    
+.catalog-left-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.catalog-right-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+} 
+
+.text-filter{
+    height: 70px;
+    margin: 0;
+    padding: 0;
     background-color: #DCDCDC;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .filter{
-    margin: 25px 193px 25px 200px;
+    margin-top: 25px;
+    margin-right: 190px;
 }
 
 .catalog-filter{
-    padding-right: 69px;
+    padding-right: 68px;
     height: auto;
     background-color: var(--basic-grey-light);
     display: flex;
@@ -629,7 +662,7 @@ img {
     min-height: 91px;
     padding: 0;
     border: none;
-    font-family: "Gilroy Light", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -640,7 +673,7 @@ img {
 
 .filter-legend{
     position: absolute;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -710,7 +743,7 @@ img {
     margin: 0;
     margin-top: 19px;    
 
-    font-family: "Gilroy Light", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -726,6 +759,11 @@ img {
 }
 
 .price-box{
+    font-family: "Gilroy", "Tahoma", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
     width: 55px;
     outline: none;
     border: none;
@@ -755,13 +793,12 @@ img {
     margin-left: 43px;
     margin-bottom: 20px;
     position: relative;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
     color: var(--basic-black);
-
 }
 
 .color-item:first-of-type{
@@ -788,12 +825,11 @@ img {
     background-position: 50% 50%;
 }
 
-
-
-/* Focused
-.color-checkbox-input:focus + .check-box{
-    outline: 2px solid var(--special-green);
-} */
+/*Focus */
+.color-checkbox-input:focus + .check-box,
+.radio-input:focus + .radio-box{
+    outline: 2px solid var(--special-yellow-dark);
+}
 
 /*Hover */
 .color-checkbox-input:hover + .check-box,
@@ -807,6 +843,20 @@ img {
     outline: none;
     background: none;
     opacity: 1;
+}
+
+/* Active */
+.color-checkbox-input:active + .check-box{
+    outline: none;
+    background: none;
+    opacity: 1;
+}
+
+/*Disabled */
+.color-checkbox-input:disabled + .check-box,
+.radio-input:disabled + .radio-box{
+    outline: none;
+    opacity: 0.25;
 }
 
 /* Bluetooth */
@@ -826,7 +876,7 @@ img {
     margin: 0;
     margin-left: 42px;
     margin-bottom: 20px;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -851,7 +901,7 @@ img {
 }
 
 .radio-input:checked + .radio-box::before {
-    content: url(../img/Ellipse-radio.svg);
+    content: url(../img/ellipse-radio.svg);
     position: absolute;
     left: 6px;
     top:  -1px;
@@ -859,9 +909,9 @@ img {
     height: 8px;
 }
 
-
-
 .catalog-sort{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -874,8 +924,8 @@ img {
     min-width: 45px;
     margin: 0;
     margin-left: auto;
-    margin-right: 145px;
-    margin-top: 23px;
+    margin-right: 4px;
+    margin-top: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -889,7 +939,12 @@ img {
 }
 
 .polygone-1{
+    background-image: url(../img/sort-polygon-1.svg);
     opacity: 0.2;
+}
+
+.polygone-2{
+    background-image: url(../img/sort-polygon-2.svg);
 }
 
 .polygone:hover{
@@ -902,13 +957,27 @@ img {
     opacity: 1;
 }
 
+.polygone:focus{
+    background: none;
+    border: none;
+    outline: 2px solid var(--special-green);
+    opacity: 1;
+}
+
+.polygone-img{
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
 .sort{
     margin: 25px -2px 25px 72px;    
 }
 
 .how-to-sort{   
     margin-right: 30px;
-    font-family: "Open Sans Regular", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -918,7 +987,7 @@ img {
 }
 
 .how-to-sort.active{
-    font-family: "Open Sans Regular", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -941,7 +1010,6 @@ img {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-
 }
 
 .product-list{
@@ -972,7 +1040,7 @@ img {
 .denomination{
     padding: 0;
     margin: 0;    
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -1015,7 +1083,7 @@ img {
 .add-to-compare{
     margin-top: 222px;
     margin-left: 88px;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 13px;
@@ -1042,7 +1110,7 @@ img {
 .cost{
     margin: 0;  
     padding: 0;  
-    font-family: "Gilroy Light", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -1105,7 +1173,7 @@ img {
 }
 
 .passive{    
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -1134,7 +1202,7 @@ img {
 .number-of-page,
 .back,
 .next{    
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -1179,8 +1247,9 @@ img {
 
 .crumb,
 .crumb-current{
+    margin-right: 30px;
     padding: 0;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1191,11 +1260,32 @@ img {
     position: relative;
 }
 
-.crumbs-icon{
-    margin: 0 18px 0 18px;
-
+.crumb:hover,
+.crumb-current:hover{
+    opacity: 0.6;
 }
 
+.crumb:active,
+.crumb-current:active{
+    opacity: 0.1;
+}
+
+.bread-crumb{
+    margin-right: 10px;
+    position: relative;
+}
+
+.bread-crumb::after{
+    padding: 0 10px;
+    content: "";
+    position: absolute;  
+    top: 40%;
+    right: -20px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../img/crumbs-vector.svg);
+    background-repeat: no-repeat;
+}
 
 /* Slider Product */
 
@@ -1217,14 +1307,15 @@ img {
     
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
     position: relative;
 }
 
 .container-middle{
     width: 100%;
-    position: relative;
+    z-index: -2;
+    padding-bottom: 114px;
+    background-color: var(--basic-grey-light);
 }
 
 .container-bottom{
@@ -1264,14 +1355,14 @@ img {
     top: -19px;
     right: 5px;
     position: absolute;
-    font-family: "Gilroy Extra Bold";
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 179px;
     line-height: 219px;
     text-transform: uppercase;
     color: var(--basic-white);
-    z-index: -2;
+    z-index: 2;
 }
 
 .number-1{
@@ -1315,8 +1406,8 @@ img {
 }
 
 .text-product-block-2{
-    margin-top: 92px;
-    margin-right: 65px;
+    margin-top: 90px;
+    margin-right: 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1330,12 +1421,13 @@ img {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    z-index: 3;
 }
 
 .do-selfie{
     padding: 0;
     margin: 0;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
@@ -1346,7 +1438,7 @@ img {
 .product-description{
     margin: 0;
     margin-top: 25px;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
@@ -1360,38 +1452,13 @@ img {
 
 .specifications{    
     margin-top: 60px;
-
-    width: 447px;
     height: 72px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    text-align: left;
+    border-collapse: collapse;
 }
 
-.values{
-    padding: 0;
-    display: flex; 
-    width: inherit;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.values-3{
-    padding: 0;    
-    display: flex; 
-    width: inherit;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-}
-
-
-.value{       
-    font-family: "Gilroy Light", "Tahoma", sans-serif;
+.value{
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 36px;
     line-height: 42px;
@@ -1400,37 +1467,44 @@ img {
     color: var(--basic-black);
 }
 
-.value-3{   
-    margin-right: 80px;    
-    font-family: "Gilroy Light", "Tahoma", sans-serif;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 42px;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    color: var(--basic-black);
+.value:nth-child(1){    
+    width: 158px;
+}
+
+.value:nth-child(2){    
+    width: 135px;
+}
+
+.value.second-slide{
+    width: 200px;
+}
+
+.value.third-slide,
+.property.third-slide{
+    padding-left: 35px;
+    width: 150px;
 }
 
 .properties{
     margin-top: 14px;
     margin-bottom: 0;
     padding: 0;
-    display: flex;
-    width: inherit;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
 }
 
 .property{
+    height: 40px;
     margin-right: 67px;
-    font-family: "Gilroy Light", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 13px;
     line-height: 15px;
     font-weight: 300;
     letter-spacing: 0.1em;
     color: var(--basic-black);
+}
+
+.property:nth-child(3){
+    padding-left: 5px;
 }
 
 .slider-controls button{    
@@ -1465,7 +1539,7 @@ img {
 
 .filter,
 .sort{
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -1494,7 +1568,6 @@ img {
 
 .category-item{
     width: 160px;
-    height: 238px;
 
     display: flex;
     flex-direction: column;
@@ -1507,11 +1580,7 @@ img {
     width: 160px;
     height: 160px;
 
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 18px;
     font-weight: 800;
@@ -1520,6 +1589,44 @@ img {
 
     color: var(--basic-black);
     background-color: var(--special-yellow);
+}
+
+.category-1{
+    width: 160px;
+    height: 160px;
+    background-position: 50% 50%;
+    background-image: url(../img/category-1.svg);
+    background-repeat: no-repeat;
+}
+
+.category-2{
+    background-position: 50% 60%;
+    background-image: url(../img/category-2.svg);
+    background-repeat: no-repeat;
+}
+
+.category-3{
+    background-position: 50% 50%;
+    background-image: url(../img/category-3.svg);
+    background-repeat: no-repeat;
+}
+
+.category-4{
+    background-position: 50% 50%;
+    background-image: url(../img/category-4.svg);
+    background-repeat: no-repeat;
+}
+
+.category-5{
+    background-position: 50% 50%;
+    background-image: url(../img/category-5.svg);
+    background-repeat: no-repeat;
+}
+
+.category-6{
+    background-position: 50% 50%;
+    background-image: url(../img/category-6.svg);
+    background-repeat: no-repeat;
 }
 
 .category:hover{    
@@ -1534,13 +1641,9 @@ img {
     opacity: 0.3;
 }
 
-.category-item:nth-of-type(2) .category-picture{
-    margin-top: 10px;
-}
-
 .category-name{
     margin-top: 38px;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -1550,7 +1653,7 @@ img {
 }
 
 .category-item:nth-of-type(4) .category-name{
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -1563,9 +1666,9 @@ img {
 
 .services{
     width: 1160px;
-    height: 320px;
+    height: max-content;
     margin: 0;
-    margin-top: 155px;
+    margin-top: 185px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -1575,18 +1678,6 @@ img {
     align-items: flex-start;
     flex-wrap: nowrap;
     position: relative;
-}
-
-.services-background{
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    position: absolute;
-    z-index: -100;
-    content: "";
-    height: 288px;
-    top: 30px;
-    background-color: var(--basic-grey-light);
 }
 
 .slider-1,
@@ -1595,17 +1686,14 @@ img {
     padding: 0;
     margin: 0;
     margin-top: 3px;
-    margin-left: 400px;
+    margin-left: 240px;
     width: 758px;
-    height: 182px;
     z-index: 0;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    position: absolute;
-    
+    flex-wrap: nowrap;   
 } 
 
 .slider-2,
@@ -1614,7 +1702,7 @@ img {
 } 
 
 .slider-list{
-    margin-top: 22px;
+    margin-top: -11px;
     width: min-content;
     height: min-content;
 
@@ -1623,6 +1711,7 @@ img {
     justify-content: flex-start;
     align-items: center;    
     position: relative;
+    z-index: 1;
 }
 
 .slider-list li{
@@ -1637,12 +1726,11 @@ img {
     width: 7px;
     height: 320px;
     right: -124px;
-    bottom: -85px;
+    bottom: -88px;
     background-color: var(--basic-black);
 }
 
 .text-slider{
-    position: absolute;
     margin: 0;
     margin-left: 0px;
     display: flex;
@@ -1652,26 +1740,26 @@ img {
 }
 
 .slider-1-img{
+    margin-top: -32px;
     width: 136px;
     height: 164px;
     margin-left: auto;
-    margin-right: 2px;
     background-image: url(../img/deliver.svg);   
 }
 
 .slider-2-img{
     width: 171px;
     height: 195px;
-    margin-top: -18px;
+    margin-top: -52px;
     margin-left: auto;
-    margin-right: -16px;
+    margin-right: -18px;
     background-image: url(../img/warranty.svg);   
 }
 
 .slider-3-img{
     width: 156px;
     height: 188px;
-    margin-top: -23px;
+    margin-top: -58px;
     margin-left: auto;
     margin-right: 6px;
     background-image: url(../img/credit.svg);   
@@ -1679,19 +1767,25 @@ img {
 
 .caption-slider{
     margin: 0;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    margin-top: -32px;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 47px;
     line-height: 58px;
     font-weight: 800;
     letter-spacing: 0.2em;
-    color: var(--basic-black);    
+    color: var(--basic-black);  
+}
+
+.slider-2 .caption-slider,
+.slider-3 .caption-slider{
+    margin-top: -35px;  
 }
 
 .caption{
     margin: 0;
     margin-top: 58px;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 47px;
     line-height: 58px;
@@ -1700,16 +1794,23 @@ img {
     color: var(--basic-black);    
 }
 
-
 .slider-description{
+    width: 495px;
     margin-top: 40px;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 15px;
-    line-height: 28px;
+    line-height: 30px;
     font-weight: 300;
     color: var(--basic-black);
     letter-spacing: 0.1em;
+}
 
+.slider-2 .slider-description{
+    width: 574px;
+}
+
+.slider-3 .slider-description{
+    width: 540px;
 }
 
 .partners{
@@ -1818,11 +1919,10 @@ a.coloring-4:hover {
     cursor: pointer;
 }
 
-
 .description{
     margin: 0;
     margin-top: 40px;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 28px;
@@ -1844,17 +1944,14 @@ a.coloring-4:hover {
 }
 
 .transport-company{
+    padding-left: 18px;
     margin-bottom: 15px;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 16px;
     font-weight: 800;
     line-height: 28px;
     color: var(--basic-black); 
-}
-
-.company{
-    padding-left: 15px;
 }
 
 .more-about-us{
@@ -1872,9 +1969,6 @@ a.coloring-4:hover {
 .page-footer{
     width: 100%;
     height: min-content;
-
-    padding: 0 140px 64px 140px;
-    margin: 0 auto 0 auto; 
     
     box-sizing: border-box;
 
@@ -1887,11 +1981,11 @@ a.coloring-4:hover {
 }
 
 .footer-container{
-    margin: 0 auto 0 auto;
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .top-blocks{
-    width: 1160px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -1913,7 +2007,7 @@ a.coloring-4:hover {
 /*Main cabinet*/
 .index-cabinet{ 
     min-width: 325px;
-    margin: 45px 0 0 auto;
+    margin: 47px 0 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -1932,8 +2026,14 @@ a.coloring-4:hover {
 }
 
 .main-footer-id{
-    margin-right: 9px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/id-footer.svg);
+    background-repeat: no-repeat;
+    margin-right: 6px;
 }
+
 /*Catalog cabinet*/
 .catalog-cabinet{ 
     min-width: 478px;
@@ -1953,7 +2053,7 @@ a.coloring-4:hover {
 }
 
 .catalog-cabinet .id-name-function{
-    margin-right: 24px;
+    margin-right: 26px;
 }
 
 .catalog-cabinet .id-name-function:hover,
@@ -1966,11 +2066,28 @@ a.coloring-4:hover {
     opacity: 0.3;
 }
 
-.catalog-footer-icons{
+.cabinet-footer-icons{
+    width: 10px;
+    height: 10px;
     margin-right: 8px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.compare-footer{
+    background-image: url(../img/compare-footer.svg);
+}
+
+.basket-footer{
+    background-image: url(../img/basket-footer.svg);
 }
 
 .id-icon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/id-footer-catalog.svg);
+    background-repeat: no-repeat;
     margin-right: 10px;
 }
 
@@ -2045,7 +2162,7 @@ a.coloring-4:hover {
 .adress{
     margin: 0;
     margin-top: 35px;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 20px;
@@ -2068,7 +2185,7 @@ a.coloring-4:hover {
 .info-item{
     margin: 0;    
     margin-left: 34px;
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif ;
+    font-family: "Gilroy", "Tahoma", sans-serif ;
     font-style: normal;
     font-size: 18px;
     line-height: 22px;
@@ -2095,22 +2212,36 @@ li:nth-child(1) .info-item{
 }
 
 .social-icon{
-    fill-opacity: 0.3;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.facebook{
+    background-image: url(../img/icon-facebook.svg);
+}
+
+.instagram{
+    background-image: url(../img/icon-instagram.svg);
+}
+
+.twitter{
+    background-image: url(../img/icon-twitter.svg);
 }
 
 .social-icon:hover{
-    fill-opacity: 0.6;
+    opacity: 0.6;
 }
 
 .social-icon:active{
-    fill-opacity: 0.1;
+    opacity: 0.1;
 }
 
-.function,
-.id-name-function,
-.out-function{
+.function-text{
     margin: 0;
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 20px;
@@ -2123,9 +2254,16 @@ li:nth-child(1) .info-item{
     margin-left: 0;
 }
 
-.function:hover{
+.function:hover .function-text,
+.id-name-function:hover .function-text,
+.out-function:hover .function-text{
     color: var(--basic-white);
     opacity: 1;
+}
+
+.function:hover .cabinet-footer-icons,
+.function:hover .main-footer-id{
+    opacity: 0.6;
 }
 
 .function:active{
@@ -2142,7 +2280,7 @@ li:nth-child(1) .info-item{
 }
 
 .tel{
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 20px;
@@ -2159,7 +2297,7 @@ li:nth-child(1) .info-item{
 }
 
 .footer-alt-text{
-    font-family: "Open Sans Light", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 15px;
     line-height: 28px;
@@ -2170,7 +2308,7 @@ li:nth-child(1) .info-item{
 /*Buttons & Switchers*/
 
 .some-act{
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-size: 18px;
     line-height: 22px;
     font-weight: 800;
@@ -2271,13 +2409,12 @@ li:nth-child(1) .info-item{
 
 /* Кнопка в каталоге */
 .some-act.catalog-show{
-    margin-top: 33px;
+    margin-top: 32px;
     position: relative;
     z-index: 100;
     border: none;
-    outline: none;
     background: none;
-    left: -35px;
+    left: 32px;
 }
 
 .some-act.catalog-show::before{
@@ -2287,7 +2424,7 @@ li:nth-child(1) .info-item{
     padding-left: 38px;
     padding-right: 46px;
     top: 8px;
-    left: -35px;
+    left: -30px;
     position: absolute;
     z-index: -1;
     box-sizing: border-box;
@@ -2304,13 +2441,11 @@ li:nth-child(1) .info-item{
     padding-bottom: 24px;
 
     border: none;
-    outline: none;
 }
 
 .some-act.catalog-show:active{
     color: var(--black-30);
     border: none;
-    outline: none;
 }
 
 /* Кнопка на product overlay */
@@ -2405,7 +2540,7 @@ li:nth-child(1) .info-item{
 /* Slider's switchers */
 
 .switcher{    
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 22px;
@@ -2466,7 +2601,7 @@ li:nth-child(1) .info-item{
     background-color: var(--special-yellow-dark);
     position: absolute;
     z-index: -1;
-}
+    }
 
 .switcher-inactive:hover:before{
     width: 160px;
@@ -2535,7 +2670,7 @@ li:nth-child(1) .info-item{
 }
 
 .label-write{    
-    font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
+    font-family: "Gilroy", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -2549,7 +2684,7 @@ li:nth-child(1) .info-item{
     box-sizing: border-box;
     border: none;
     background-color: #F2F2F2;
-    font-family: "Open Sans Regular", "Tahoma", sans-serif;
+    font-family: "Open Sans", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
