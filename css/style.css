@@ -904,7 +904,7 @@ img {
 }
 
 .radio-input:checked + .radio-box::before {
-    content: url(../img/ellipse-radio.svg);
+    content: url(../img/figure-radio.svg);
     position: absolute;
     left: 6px;
     top:  -1px;
