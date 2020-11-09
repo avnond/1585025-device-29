@@ -184,6 +184,7 @@ img {
 
 .search-icon{
     display: inline-block;
+    vertical-align: center;
     width: 13px;
     height: 13px;
     background-image: url(../img/search.svg);
@@ -312,6 +313,7 @@ img {
 
 .action-img-index{
     display: inline-block;
+    vertical-align: center;
     width: 10px;
     height: 10px;
     margin-right: 10px;
@@ -389,6 +391,7 @@ img {
 
 .nav-icon-plus{
     display: inline-block;
+    vertical-align: center;
     width: 15px;
     height: 15px;
     background-image: url(../img/plus.svg);
@@ -518,6 +521,7 @@ img {
 
 .action-img{
     display: inline-block;
+    vertical-align: center;
     width: 10px;
     height: 10px;
     background-repeat: no-repeat;
@@ -526,7 +530,6 @@ img {
 
 .action-img-valentin{
     background-image: url(../img/id.svg);
-
 }
 
 .id-name{
@@ -969,6 +972,7 @@ img {
     height: 12px;
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: center;
 }
 
 .sort{
@@ -1224,7 +1228,7 @@ img {
 
 .slider-controls {
     position: absolute;
-    bottom: 172px;
+    bottom: 152px;
     right: 75px;
     z-index: 20;
 }
@@ -1343,7 +1347,6 @@ img {
     margin: 17px 47px 0 89px;
     padding: 0;
     width: 1024px;
-    height: 506px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -1398,7 +1401,7 @@ img {
 
 .text-product-block-1{
     margin-top: 90px;
-    margin-right: 42px;
+    margin-right: 35px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1407,7 +1410,7 @@ img {
 
 .text-product-block-2{
     margin-top: 90px;
-    margin-right: 80px;
+    margin-right: 35px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1438,6 +1441,7 @@ img {
 .product-description{
     margin: 0;
     margin-top: 25px;
+    width: 478px;
     font-family: "Open Sans", "Tahoma", sans-serif;
     font-size: 15px;
     line-height: 20px;
@@ -1553,7 +1557,7 @@ img {
 .categories{
     height: min-content;
     margin: 0;
-    margin-top: 78px;
+    margin-top: 100px;
 }
 
 .list-categories{
@@ -1968,7 +1972,8 @@ a.coloring-4:hover {
 /*Footer*/
 .page-footer{
     width: 100%;
-    height: min-content;
+    height: auto;
+    padding-bottom: 60px;
     
     box-sizing: border-box;
 
@@ -2027,6 +2032,7 @@ a.coloring-4:hover {
 
 .main-footer-id{
     display: inline-block;
+    vertical-align: center;
     width: 10px;
     height: 10px;
     background-image: url(../img/id-footer.svg);
@@ -2053,7 +2059,7 @@ a.coloring-4:hover {
 }
 
 .catalog-cabinet .id-name-function{
-    margin-right: 26px;
+    margin-right: 22px;
 }
 
 .catalog-cabinet .id-name-function:hover,
@@ -2071,6 +2077,7 @@ a.coloring-4:hover {
     height: 10px;
     margin-right: 8px;
     display: inline-block;
+    vertical-align: center;
     background-repeat: no-repeat;
 }
 
@@ -2084,6 +2091,7 @@ a.coloring-4:hover {
 
 .id-icon{
     display: inline-block;
+    vertical-align: center;
     width: 10px;
     height: 10px;
     background-image: url(../img/id-footer-catalog.svg);
@@ -2110,7 +2118,7 @@ a.coloring-4:hover {
 }
 
 .catalog-middle-block{
-    margin-top: 35px;
+    margin-top: 37px;
     margin-left: 165px;
     padding: 0;
 }
@@ -2213,6 +2221,7 @@ li:nth-child(1) .info-item{
 
 .social-icon{
     display: inline-block;
+    vertical-align: center;
     width: 32px;
     height: 32px;
     background-repeat: no-repeat;
