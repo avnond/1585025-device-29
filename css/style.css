@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Gilroy';
+    font-family: "Gilroy";
     font-style: normal;
     font-weight: 800;
     src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
@@ -7,7 +7,7 @@
 }   
 
  @font-face {
-    font-family: 'Gilroy';
+    font-family: "Gilroy";
     font-style: normal;
     font-weight: 300;
     src: url("../fonts/gilroylight.woff2") format("woff2"),
@@ -16,7 +16,7 @@
 } 
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/opensans.woff2") format("woff2"), 
@@ -113,6 +113,11 @@ img {
     height: 100%;
 }
 
+/* Catalog body */
+.catalog-body{
+    margin-right: 20px;
+    margin-left: 20px;
+}
 
 /* Header */
 .page-body .main-header{
@@ -122,8 +127,15 @@ img {
     margin: 40px auto 0 auto;
     padding-bottom: 164px;
     background-color: var(--special-yellow);
-    position: relative;
-    
+    position: relative;    
+}
+
+.header-container{
+    margin: 0 auto;
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .catalog-body .main-header{
@@ -155,8 +167,6 @@ img {
     margin-top: -20px;
     margin-left: 60px;
 }
-
-/* не исчезает outline */
 
 .device-header:hover{
     opacity: 0.6;
@@ -448,7 +458,7 @@ img {
 
 /*Catalod Body*/
 .catalog-body{
-    min-width: 1160px;
+    min-width: 1200px;
     height: min-content;
     margin: 0;
     padding: 0;
@@ -591,9 +601,9 @@ img {
 
 .catalog-heading-block{
     box-sizing: border-box;
-    margin: 44px auto 0 auto;
-    padding-left: 200px;
-    width: 1440px;
+    margin: 40px auto 0 auto;
+    padding-left: 58px;
+    max-width: 1160px;
     height: auto;
 } 
 
@@ -604,7 +614,7 @@ img {
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
-    color: var(--basic-black);    
+    color: var(--basic-black); 
 }
 
 .catalog-container{
@@ -834,25 +844,11 @@ img {
     outline: 2px solid var(--special-yellow-dark);
 }
 
-/*Hover */
+/* Hover  */
 .color-checkbox-input:hover + .check-box,
 .radio-input:hover + .radio-box{
     outline: none;
     opacity: 0.6;
-}
-
-/* Cheked active */
-.color-checkbox-input:checked:active + .check-box{
-    outline: none;
-    background: none;
-    opacity: 1;
-}
-
-/* Active */
-.color-checkbox-input:active + .check-box{
-    outline: none;
-    background: none;
-    opacity: 1;
 }
 
 /*Disabled */
@@ -1304,11 +1300,11 @@ img {
 
 .container-top{
     margin: -145px auto 0 auto;
-    padding: 0;
+    padding: 0 20px;
 
-    width: 1160px;
+    width: 1200px;
     height: auto;
-    
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;    
@@ -1322,20 +1318,29 @@ img {
     background-color: var(--basic-grey-light);
 }
 
-.container-bottom{
+.wrapper-bottom{
     margin: -145px auto 0 auto;
     padding: 0;
 
     width: 1160px;
     height: auto;
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;    
     position: relative;
 }
 
+.container-bottom{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 0px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
 .main-slider{
+    margin-right: auto;
+    margin-left: auto;
     position: relative;
 }
 
@@ -1554,10 +1559,20 @@ img {
 }
 
 /* Categories */
+
+.categories-container{    
+    margin: 0 auto;
+    margin-top: 99px;
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
 .categories{
+    margin: 0 auto;
+    width: 1160px;
     height: min-content;
-    margin: 0;
-    margin-top: 100px;
 }
 
 .list-categories{
@@ -1567,7 +1582,6 @@ img {
     display: grid;
     grid-template-columns: repeat(6, 160px);
     column-gap: 40px;
-
 }
 
 .category-item{
@@ -1668,11 +1682,20 @@ img {
 
 /*Slider Info*/
 
+.services-container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
 .services{
     width: 1160px;
     height: max-content;
     margin: 0;
-    margin-top: 185px;
+    margin-top: 184px;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -1821,9 +1844,9 @@ img {
     margin-top: 235px;
     padding: 0;
     width: 1160px;
-    height: 100px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 a.coloring-1 {
@@ -1874,7 +1897,7 @@ a.coloring-4:hover {
     padding-bottom: 68px;
     width: 1160px;
     height: min-content;
-    margin-top: 90px;
+    margin-top: 88px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -1983,6 +2006,13 @@ a.coloring-4:hover {
     align-items: flex-start;
 
     background-color: var(--basic-dark);
+}
+
+.footer-wrapper{
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-container{
@@ -2135,10 +2165,12 @@ a.coloring-4:hover {
 .social-list{
     margin: 0;
     margin-top: 67px;
-    margin-left: 145px;
-    width: 136px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -2175,8 +2207,7 @@ a.coloring-4:hover {
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
-    color: var(--basic-white);
-    
+    color: var(--basic-white);    
 }
 
 .adress::after{
@@ -2187,7 +2218,6 @@ a.coloring-4:hover {
     top: 135px;
     left: 0;
     background-color: var(--unusual-yellow);
-
 }
 
 .info-item{
@@ -2216,6 +2246,11 @@ li:nth-child(1) .info-item{
 }
 
 .social-item{
+    margin: 0;
+    margin-right: 20px;
+}
+
+.social-item:last-child{
     margin: 0;
 }
 

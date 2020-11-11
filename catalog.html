@@ -3,82 +3,85 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="catalog-body">
-    <header class="main-header">
-      <div class="header-logo">
-        <a tabindex="0" aria-label="Перейти на главную страницу магазина «Девайс»" class="device-header" href="index.html">
-          <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
-        </a>
-      </div>      
-
-      <div class="header-actions">
-        <form class="site-search">
-          <label class="search-label search-icon" for="search-window"></label>
-          <input class="search-form" type="search" id="search-window" placeholder="Поиск по сайту">
-          <button aria-label="Найти на сайте" class="button-search" type="submit">Найти</button>
-        </form>
-
-        <ul class="list сatalog-actions-list">      
-          <li class="catalog-action-item">
-            <a class="id-name" href="blank.html" aria-label="Войти в личный кабинет">
-              <div class="action-img action-img-valentin"></div>
-              Валентин Петухов
-            </a>
-          </li>
-          <li class="catalog-action-item">
-            <a class="out" href="blank.html" aria-label="Выйти из личного кабинета">
-              Выйти
-            </a>
-          </li>
-          <li class="catalog-action-item">
-            <a href="blank.html" aria-label="Сравнить товары">
-              <div class="action-img-index action-img-compare"></div>
-              Сравнить
-            </a>
-          </li>
-          <li class="catalog-action-item">
-            <a href="blank.html" aria-label="Перейти в корзину">
-              <div class="action-img-index action-img-basket"></div>
-              Корзина
-            </a>
-          </li>       
-        </ul>
-      </div>
-
-      <nav class="main-navigation">   
-        <h2 class="visually-hidden">Разделы сайта</h2>                                  
-        <ul class="list site-navigation">
-          <li class="navigation-item">
-            <a href="catalog.html">Каталог товаров
-              <div class="nav-icon-plus"></div>
-            </a>
-            <ul class='list inner-list'>
-              <li class="inner-block">
-                <ul class="list">
-                  <li><a href="catalog.html">Виртуальная реальность</a></li>
-                  <li><a href="#">Моноподы для селфи</a></li>
-                  <li><a href="catalog.html">Экшн-камеры</a></li>                     
-                </ul>
-                <ul class="list">
-                  <li><a href="catalog.html">Фитнес-браслеты</a></li>
-                  <li><a href="catalog.html">Умные часы</a></li>
-                </ul>
-                <ul class="list">                      
-                  <li><a href="catalog.html">Квадрокоптер</a></li>
-                </ul>
-              </li>                  
-            </ul>
-          </li>
-          <li class="navigation-item"><a href="blank.html">Доставка</a></li>
-          <li class="navigation-item"><a href="blank.html">Гарантия</a></li>
-          <li class="navigation-item"><a href="blank.html">Контакты</a></li>
-        </ul>                
-      </nav>
-  </header>
+    <div class="header-container">
+      <header class="main-header">
+        <div class="header-logo">
+          <a tabindex="0" aria-label="Перейти на главную страницу магазина «Девайс»" class="device-header" href="index.html">
+            <img src="img/logo-header.svg" width="163" height="35" alt="Логотип магазина «Девайс»">
+          </a>
+        </div>      
+  
+        <div class="header-actions">
+          <form class="site-search">
+            <label class="search-label search-icon" for="search-window"></label>
+            <input class="search-form" type="search" id="search-window" placeholder="Поиск по сайту">
+            <button aria-label="Найти на сайте" class="button-search" type="submit">Найти</button>
+          </form>
+  
+          <ul class="list сatalog-actions-list">      
+            <li class="catalog-action-item">
+              <a class="id-name" href="blank.html" aria-label="Войти в личный кабинет">
+                <div class="action-img action-img-valentin"></div>
+                Валентин Петухов
+              </a>
+            </li>
+            <li class="catalog-action-item">
+              <a class="out" href="blank.html" aria-label="Выйти из личного кабинета">
+                Выйти
+              </a>
+            </li>
+            <li class="catalog-action-item">
+              <a href="blank.html" aria-label="Сравнить товары">
+                <div class="action-img-index action-img-compare"></div>
+                Сравнить
+              </a>
+            </li>
+            <li class="catalog-action-item">
+              <a href="blank.html" aria-label="Перейти в корзину">
+                <div class="action-img-index action-img-basket"></div>
+                Корзина
+              </a>
+            </li>       
+          </ul>
+        </div>
+  
+        <nav class="main-navigation">   
+          <h2 class="visually-hidden">Разделы сайта</h2>                                  
+          <ul class="list site-navigation">
+            <li class="navigation-item">
+              <a href="catalog.html">Каталог товаров
+                <div class="nav-icon-plus"></div>
+              </a>
+              <ul class="list inner-list">
+                <li class="inner-block">
+                  <ul class="list">
+                    <li><a href="catalog.html">Виртуальная реальность</a></li>
+                    <li><a href="#">Моноподы для селфи</a></li>
+                    <li><a href="catalog.html">Экшн-камеры</a></li>                     
+                  </ul>
+                  <ul class="list">
+                    <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                    <li><a href="catalog.html">Умные часы</a></li>
+                  </ul>
+                  <ul class="list">                      
+                    <li><a href="catalog.html">Квадрокоптер</a></li>
+                  </ul>
+                </li>                  
+              </ul>
+            </li>
+            <li class="navigation-item"><a href="blank.html">Доставка</a></li>
+            <li class="navigation-item"><a href="blank.html">Гарантия</a></li>
+            <li class="navigation-item"><a href="blank.html">Контакты</a></li>
+          </ul>                
+        </nav>
+     </header>
+    </div>
+    
 
     <main class="catalog-main">
       <section class="catalog-heading-block">
@@ -88,7 +91,7 @@
           <li class="bread-crumb"><a class="crumb" href="catalog.html">Каталог товаров</a></li>
           <li><a class="crumb-current">Моноподы для селфи</a></li>
         </ul>
-     </section>
+      </section>
 
       <div class="catalog-wrapper"> 
         <div class="wr1"></div>
@@ -343,15 +346,14 @@
               </li>   
             </ul>
         </div>
-
-          <div class="catalog-right-block">
-            <a class="tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-            <p class="academy-logo">
-              <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на htmlacademy.ru">
-                <img class="html-academy footer-alt-text" src="img/html-academy.svg" width="27" height="34" alt="HTML Academy">
-              </a>
-            </p>  
-          </div>
+        <div class="catalog-right-block">
+          <a class="tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          <p class="academy-logo">
+            <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на htmlacademy.ru">
+              <img class="html-academy footer-alt-text" src="img/html-academy.svg" width="27" height="34" alt="HTML Academy">
+            </a>
+          </p>  
+        </div>
       </div>   
       </div>        
     </footer>
